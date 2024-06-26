@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="4.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class="outerxboxes">
+        <div class="leftbar">
+            <div class="left-corner-menu">
+                <img src="logo.png" alt="" class="logo">
+                <ul>
+                    <li><a href="#" class="about-omega"><i class="ri-building-line"></i><b>About Omega</b></a></li>
+                    <li><a href="#" class="contract"><i class="ri-contract-line"></i><b> Contract</b></a></li>
+                    <li><a href="#" class="proactive"><i class="ri-surround-sound-line"></i><b> Proactive</b></a></li>
+                    <li><a href="#" class="project"><i class="ri-projector-line"></i><b> Project</b></a></li>
+                    <li><a href="#" class="training"><i class="ri-presentation-fill"></i><b> Training</b></a></li>
+                    <li><a href="#" class="employee-benefits"><i class="ri-team-line"></i><b> Employee Benefits</b></a>
+                    </li>
+                    <li><a href="#" class="settings"><i class="ri-settings-2-line"></i> <b> Settings</b></a></li>
+                    <li><a href="#" class="logout"><i class="ri-logout-box-r-line"></i><b>Logout</b></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <form action="#" class="header-search-form for-des">
+                <input type="search" class="form-input" placeholder="Search Here...">
+                <button type="submit">
+                </button>
+            </form>
+            <div class="mainbox">
+                <h1>Registration</h1>
+                <br><br>
+                <div class="register">
+                    <div class="regin">
+                        <div class="regdot">
+
+                            <div class="dotline">
+                            </div>
+                            <div class="dot1" style=" background-color: #5271ff;">
+                                <h9>1</h9>
+                            </div>
+                            <div class="dot2" style=" background-color: #5271ff;">
+                                <h9>2</h9>
+                            </div>
+                            <div class="dot3" style=" background-color: #5271ff;">
+                                <h9>3</h9>
+                            </div>
+                            <div class="dot4" style=" background-color: #5271ff;">
+                                <a id="sec2">
+                                <h9>4</h9></a>
+                            </div>
+                            <div class="dot5">
+                                <a id="sec3">
+                                <h9>5</h9></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inthetext">
+                        <h3>Name of CPA/Tax Accountant</h3>
+                    </div>
+                    <br>
+                    <div class="regin3">
+                        <div class="in3">
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" placeholder="Name">
+                            <span></span>
+                        </div>
+                        <div class="in3">
+                            <label for="Title">Title</label><br>
+                            <input type="text" id="title" placeholder="Address">
+                            <span></span>
+                        </div>
+                        <br><br>
+                    </div>
+                    <div class="regin4">
+                        <div class="in4">
+                            <label for="City">City</label><br>
+                            <input type="text" id="city" placeholder="City">
+                            <span></span>
+                        </div>
+                        <div class="in4">
+                            <label for="State">State</label><br>
+                            <input type="text" id="state" placeholder="State">
+                            <span></span>
+                        </div>
+                        <br><br>
+                    </div>
+                    <div class="regin5">
+                        <div class="in5">
+                            <label for="Phone">Phone</label><br>
+                            <input type="text" id="phone" placeholder="Phone">
+                            <span></span>
+                        </div>
+                        <div class="in5">
+                            <label for="Fax">Fax</label><br>
+                            <input type="number" id="fax" placeholder="Fax">
+                            <span></span>
+                        </div>
+                        <br><br>
+                    </div>
+                    <div class="regin6">
+                        <div class="in6">
+                            <label for="ZIP">ZIP</label><br>
+                            <input type="number" id="zip" placeholder="ZIP">
+                            <span></span>
+                        </div>
+                        <div class="in6">
+                            <label for="Email">Email</label><br>
+                            <input type="email" id="email" placeholder="Email">
+                            <span></span>
+                        </div>
+                        <br><br>
+                    </div>
+                    <div class="btnreg">
+                        <a id="buton" class="btnback">Back</a>
+                        <a id="button" class="btnnext">Next ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let Name = document.getElementById('name');
+        let Title = document.getElementById('title');
+        let City = document.getElementById('city');
+        let State = document.getElementById('state');
+        let Phone = document.getElementById('phone');
+        let Fax = document.getElementById('fax');
+        let Zip = document.getElementById('zip');
+        let Email = document.getElementById('email');
+        document.getElementById('buton').addEventListener('click', () => {
+            window.location.href = '3.html'
+        })
+    
+        document.getElementById('button').addEventListener('click', (event) => {
+            if (validateForm()) {
+                window.location.href = '5.html';
+            } else {
+                event.preventDefault();
+            }
+        });
+    
+        document.getElementById('sec3').addEventListener('click', () => {
+            if (validateForm()) {
+                window.location.href = '5.html';
+            }
+        });
+    
+        function validateForm() {
+            let isValid = true;
+    
+            if (!Name.value) {
+                Name.parentNode.querySelector('span').textContent = 'Please enter the value';
+                Name.parentNode.querySelector('span').style.color = 'red';
+                Name.parentNode.querySelector('span').style.marginBottom = '12px';
+                Name.parentNode.querySelector('span').style.fontSize = '12px';
+                isValid = false;
+            } else {
+                Name.parentNode.querySelector('span').textContent = '';
+            }
+    
+            if (!Title.value) {
+                Title.parentNode.querySelector('span').textContent = 'Please enter the value';
+                Title.parentNode.querySelector('span').style.color = 'red';
+                Title.parentNode.querySelector('span').style.marginBottom = '12px';
+                Title.parentNode.querySelector('span').style.fontSize = '12px';
+                
+                isValid = false;
+            } else {
+                Title.parentNode.querySelector('span').textContent = '';
+            }
+    
+            if (City.value === '') {
+                City.parentNode.querySelector('span').textContent = 'Please enter the value';
+                City.parentNode.querySelector('span').style.color = 'red';
+                City.parentNode.querySelector('span').style.marginBottom = '12px';
+                City.parentNode.querySelector('span').style.fontSize = '12px';
+                isValid = false;
+            } else {
+                City.parentNode.querySelector('span').textContent = '';
+            }
+            if (State.value === '') {
+                State.parentNode.querySelector('span').textContent = 'Please enter the value';
+                State.parentNode.querySelector('span').style.color = 'red';
+                State.parentNode.querySelector('span').style.marginBottom = '12px';
+                State.parentNode.querySelector('span').style.fontSize = '12px';
+                isValid = false;
+            } else {
+                State.parentNode.querySelector('span').textContent = '';
+            }
+            if (Phone.value === '') {
+                Phone.parentNode.querySelector('span').textContent = 'Please enter the value';
+                Phone.parentNode.querySelector('span').style.color = 'red';
+                Phone.parentNode.querySelector('span').style.marginBottom = '12px';
+                Phone.parentNode.querySelector('span').style.fontSize = '12px';
+                isValid = false;
+            } else if (Phone.value.length < 10) {
+                Phone.parentNode.querySelector('span').textContent = 'Please provide a valid number';
+                Phone.parentNode.querySelector('span').style.color = 'red';
+                Phone.parentNode.querySelector('span').style.marginBottom = '12px';
+                Phone.parentNode.querySelector('span').style.fontSize = '12px';
+                isValid = false;
+            }
+            else {
+                Phone.parentNode.querySelector('span').textContent = '';
+            }
+            if (Fax.value === '') {
+                Fax.parentNode.querySelector('span').textContent = 'Please enter the value';
+                Fax.parentNode.querySelector('span').style.color = 'red';
+                Fax.parentNode.querySelector('span').style.marginBottom = '12px';
+                Fax.parentNode.querySelector('span').style.fontSize = '12px';
+                isValid = false;
+            } else {
+                Fax.parentNode.querySelector('span').textContent = '';
+            }
+            if (Zip.value === '') {
+                Zip.parentNode.querySelector('span').textContent = 'Please enter the value';
+                Zip.parentNode.querySelector('span').style.color = 'red';
+                Zip.parentNode.querySelector('span').style.marginBottom = '12px';
+                Zip.parentNode.querySelector('span').style.fontSize = '12px';
+                isValid = false;
+            } else {
+                Zip.parentNode.querySelector('span').textContent = '';
+            }
+            if (Email.value === '') {
+                Email.parentNode.querySelector('span').textContent = 'Please enter the value';
+                Email.parentNode.querySelector('span').style.color = 'red';
+                Email.parentNode.querySelector('span').style.marginBottom = '12px';
+                Email.parentNode.querySelector('span').style.fontSize = '12px';
+                isValid = false;
+            } else if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(Email.value) || !Email.value.includes('@gmail.com')) {
+                Email.parentNode.querySelector('span').textContent = 'Email should be a valid and contain @gmail.com';
+                Email.parentNode.querySelector('span').style.color = 'red';
+                Email.parentNode.querySelector('span').style.marginBottom = '12px';
+                Email.parentNode.querySelector('span').style.fontSize = '12px';
+                isValid = false;
+            }
+            else {
+                Email.parentNode.querySelector('span').textContent = '';
+            }
+            return isValid;
+        }
+    </script>
+</body>
+
+</html>

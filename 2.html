@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class="outerxboxes">
+        <div class="leftbar">
+            <div class="left-corner-menu">
+                <img src="logo.png" alt="" class="logo">
+                <ul>
+                    <li><a href="#" class="about-omega"><i class="ri-building-line"></i><b>About Omega</b></a></li>
+                    <li><a href="#" class="contract"><i class="ri-contract-line"></i><b> Contract</b></a></li>
+                    <li><a href="#" class="proactive"><i class="ri-surround-sound-line"></i><b> Proactive</b></a></li>
+                    <li><a href="#" class="project"><i class="ri-projector-line"></i><b> Project</b></a></li>
+                    <li><a href="#" class="training"><i class="ri-presentation-fill"></i><b> Training</b></a></li>
+                    <li><a href="#" class="employee-benefits"><i class="ri-team-line"></i><b> Employee Benefits</b></a></li>
+                    <li><a href="#" class="settings"><i class="ri-settings-2-line"></i> <b> Settings</b></a></li>
+                    <li><a href="#" class="logout"><i class="ri-logout-box-r-line"></i><b>Logout</b></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <form action="#" class="header-search-form for-des">
+                <input type="search" class="form-input" placeholder="Search Here...">
+                <button type="submit">
+                </button>
+            </form>
+            <div class="mainbox">
+                <h1>Registration</h1>
+                <br><br>
+                <div class="register">
+                    <div class="regin">
+                        <div class="regdot">
+
+                            <div class="dotline">
+                            </div>
+                            <div class="dot1" style=" background-color: #5271ff;">
+                                <h9>1</h9>
+                            </div>
+                            <div class="dot2" style=" background-color: #5271ff;">
+                                <a id="ab">
+                                    <h9>2</h9></a>
+                                </a>
+                            </div>
+                            <div class="dot3">
+                                <a id="sec1">
+                                    <h9>3</h9>
+                                </a>
+                            </div>
+                            <div class="dot4">
+                                <h9>4</h9>
+                            </div>
+                            <div class="dot5">
+                                <h9>5</h9>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inthetext">
+                        <h3>What is the nature of the business</h3>
+                    </div>
+                    <br>
+                    <div class="regin3">
+                        <div class="in3">
+                            <label for="federal">Federal Id</label><br>
+                            <input type="text" id="Federal" placeholder="Federal Id" required>
+                            <span></span>
+                        </div>
+                        <div class="in3">
+                            <label for="yearsinbusiness">No. of years in business</label><br>
+                            <input type="text" id="Yearsinbusiness" placeholder="years in business" required>
+                            <span></span>
+                        </div>
+                        <br><br>
+                    </div>
+                    <div class="regin2">
+                        <div class="in2">
+                            <label for="businesstype">Number of Employees</label><br>
+                            <select name="" id="Businesstype" required>
+                                <option value selected disabled>Number of Employees</option>
+                                <option value="">1-10</option>
+                                <option value="">10-100</option>
+                                <option value="">1000-10,000</option>
+                                <option value="">10,000-100,000</option>
+                            </select>
+                            <span></span>
+                        </div>
+                        <div class="in2">
+                            <label for="Specificcategory">Annual Revenues</label><br>
+                            <select name="" id="specificcategory" required>
+                                <option value selected disabled>Annual Revenues</option>
+                                <option value="">$10k-$100k</option>
+                                <option value="">$100k-$1M</option>
+                                <option value="">$1M-$10M</option>
+                                <option value="">$10M-$100M</option>
+                            </select>
+                            <span></span>
+                        </div>
+                        <br><br>
+                    </div>
+                    <div class="regin4">
+                        <div class="in4">
+                            <div>
+                                <input type="checkbox">
+                                <p3>Sole Proprietorship</p3>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <p3>Partnership</p3>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <p3>S-Corp</p3>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <p3>LLP</p3>
+                            </div>
+                        </div>
+                        <div class="in4">
+                            <div>
+                                <input type="checkbox">
+                                <p3>Corporation</p3>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <p3>Non Profit</p3>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <p3>LLC</p3>
+                            </div>
+                            <div>
+                                <input type="checkbox">
+                                <p3>Individual</p3>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <div class="btnreg">
+                            <a id="buton" class="btnback">Back</a>
+                            <a id="button" class="btnnext">Next ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let Federal = document.getElementById('Federal');
+        let Business = document.getElementById('Yearsinbusiness');
+        document.getElementById('buton').addEventListener('click', () => {
+            window.location.href = 'index.html'
+        })
+    
+        document.getElementById('button').addEventListener('click', (event) => {
+            if (validateForm()) {
+                window.location.href = '3.html';
+            } else {
+                event.preventDefault();
+            }
+        });
+    
+        document.getElementById('sec1').addEventListener('click', () => {
+            if (validateForm()) {
+                window.location.href = '3.html';
+            }
+        });
+    
+        function validateForm() {
+            let isValid = true;
+    
+            if (!Federal.value) {
+                Federal.parentNode.querySelector('span').textContent = 'Please enter the value';
+                Federal.parentNode.querySelector('span').style.color = 'red';
+                Federal.parentNode.querySelector('span').style.marginBottom = '-12px';
+                Federal.parentNode.querySelector('span').style.fontSize = '12px';
+                isValid = false;
+            } else {
+                Federal.parentNode.querySelector('span').textContent = '';
+            }
+    
+            if (!Business.value) {
+                Business.parentNode.querySelector('span').textContent = 'Please enter the value';
+                Business.parentNode.querySelector('span').style.color = 'red';
+                Business.parentNode.querySelector('span').style.marginBottom = '12px';
+                Business.parentNode.querySelector('span').style.fontSize = '12px';
+                
+                isValid = false;
+            } else {
+                Business.parentNode.querySelector('span').textContent = '';
+            }
+            return isValid;
+        }
+    </script>
+     
+</body>
+
+</html>

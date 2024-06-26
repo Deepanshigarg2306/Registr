@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class="outerxboxes">
+        <div class="leftbar">
+            <div class="left-corner-menu">
+                <img src="logo.png" alt="" class="logo">
+                <ul>
+                    <li><a href="#" class="about-omega"><i class="ri-building-line"></i><b>About Omega</b></a></li>
+                    <li><a href="#" class="contract"><i class="ri-contract-line"></i><b> Contract</b></a></li>
+                    <li><a href="#" class="proactive"><i class="ri-surround-sound-line"></i><b> Proactive</b></a></li>
+                    <li><a href="#" class="project"><i class="ri-projector-line"></i><b> Project</b></a></li>
+                    <li><a href="#" class="training"><i class="ri-presentation-fill"></i><b> Training</b></a></li>
+                    <li><a href="#" class="employee-benefits"><i class="ri-team-line"></i><b> Employee Benefits</b></a>
+                    </li>
+                    <li><a href="#" class="settings"><i class="ri-settings-2-line"></i> <b> Settings</b></a></li>
+                    <li><a href="#" class="logout"><i class="ri-logout-box-r-line"></i><b>Logout</b></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <form action="#" class="header-search-form for-des">
+                <input type="search" class="form-input" placeholder="Search Here...">
+                <button type="submit">
+                </button>
+            </form>
+            <div class="mainbox">
+                <h1>Registration</h1>
+                <br><br>
+                <div class="register">
+                    <div class="regin">
+                        <div class="regdot">
+                            <div class="dotline">
+                            </div>
+                            <div class="dot1" style=" background-color: #5271ff;">
+                                <a id="sec">
+                                    <h9>1</h9>
+                                </a>
+                            </div>
+                            <div class="dot2">
+                                <a id="ab">
+                                    <h9>2</h9>
+                                </a>
+                            </div>
+                            <div class="dot3">
+                                <h9>3</h9>
+                            </div>
+                            <div class="dot4">
+                                <h9>4</h9>
+                            </div>
+                            <div class="dot5">
+                                <h9>5</h9>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regin2">
+                        <div class="in2">
+                            <label for="businesstype">Business Type</label><br>
+                            <select id="businesstype" required>
+                                <option value="" selected disabled>Business Type</option>
+                                <option value="Partnership">Partnership</option>
+                                <option value="Corporation">Corporation</option>
+                                <option value="LLC">Limited Liability Company</option>
+                                <option value="Sole Proprietorship">Sole Proprietorship</option>
+                            </select>
+                            <div class="error"></div>
+                        </div>
+                        <div class="in2">
+                            <label for="Specificcategory">Specific Category</label><br>
+                            <select id="specificcategory" required>
+                                <option value="" selected disabled>Specific Category</option>
+                                <option value="Category1">Category 1</option>
+                                <option value="Category2">Category 2</option>
+                                <option value="Category3">Category 3</option>
+                                <option value="Category4">Category 4</option>
+                            </select>
+                            <div class="error"></div>
+                        </div>
+                        <br><br>
+                    </div>
+                    <hr>
+                    <br>
+                    <div class="regin3">
+                        <div class="in3">
+                            <label for="businessName">Business Name</label><br>
+                            <input id="businessName" name="businessName" type="text" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="in3">
+                            <label for="Address">Address</label><br>
+                            <input type="text" id="address" placeholder="Address" required>
+                            <div class="error"></div>
+                        </div>
+                        <br><br>
+                    </div>
+                    <div class="regin4">
+                        <div class="in4">
+                            <label for="City">City</label><br>
+                            <input type="text" id="city" placeholder="City" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="in4">
+                            <label for="State">State</label><br>
+                            <input type="text" id="state" placeholder="State" required>
+                            <div class="error"></div>
+                        </div>
+                        <br><br>
+                    </div>
+                    <div class="regin5">
+                        <div class="in5">
+                            <label for="ZIP">ZIP</label><br>
+                            <input type="text" id="zip" placeholder="ZIP" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="in5">
+                            <label for="ContactPersonPosition">Contact&nbsp;Person,&nbsp;Position</label><br>
+                            <input type="text" id="contactperson" placeholder="Contact Person, Position" required>
+                            <div class="error"></div>
+                        </div>
+                        <br><br>
+                    </div>
+                    <div class="regin6">
+                        <div class="in6">
+                            <label for="DateOfBirth">Date Of Birth</label><br>
+                            <input type="date" id="dateofbirth" placeholder="Date Of Birth" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="in6">
+                            <label for="Spouse">Spouse</label><br>
+                            <input type="text" id="spouse" placeholder="Spouse">
+                            <div class="error"></div>
+                        </div>
+                        <br><br>
+                    </div>
+                    <div class="regin7">
+                        <div class="in7">
+                            <label for="Interests/Hobbies">Interests/Hobbies</label><br>
+                            <input type="text" id="interests" placeholder="Interests/Hobbies">
+                            <div class="error"></div>
+                        </div>
+                        <div class="in7">
+                            <label for="BusinessPhone">Business Phone</label><br>
+                            <input type="tel" id="businessphone" placeholder="Business Phone" required>
+                            <div class="error"></div>
+                        </div>
+                        <br><br>
+                    </div>
+                    <div class="regin8">
+                        <div class="in8">
+                            <label for="Cell">Cell</label><br>
+                            <input type="tel" id="cell" placeholder="Cell" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="in8">
+                            <label for="BusinessFax">Business Fax</label><br>
+                            <input type="text" id="fax" placeholder="Business Fax">
+                            <div class="error"></div>
+                        </div>
+                        <br><br>
+                    </div>
+                    <div class="regin8">
+                        <div class="in8">
+                            <label for="E-mail">E-mail</label><br>
+                            <input type="email" id="email" placeholder="E-mail" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="in8">
+                            <label for="PreferredMethod">Preferred&nbsp;Method&nbsp;of&nbsp;Contact</label><br>
+                            <input type="text" id="preferredmethod" placeholder="Preferred Method">
+                            <div class="error"></div>
+                        </div>
+                        <br><br>
+                    </div>
+                    <div class="regin9">
+                        <div class="in9">
+                            <label for="Besttime">Best Time to Reach</label><br>
+                            <input type="text" id="besttime" placeholder="Best Time to Reach">
+                            <div class="error"></div>
+                        </div>
+                        <div class="in9">
+                        </div>
+                        <br><br>
+                    </div>
+                    <div class="btnreg"><a id="button">Next ></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        document.getElementById('button').addEventListener('click', (event) => {
+            if (validateForm()) {
+                window.location.href = '2.html';
+            } else {
+                event.preventDefault();
+            }
+        });
+        document.getElementById('ab').addEventListener('click', () => {
+            if (validateForm()) {
+                window.location.href = '2.html';
+            }
+        });
+        function validateForm() {
+            let isValid = true;
+            let fields = [
+                'businesstype', 'specificcategory', 'businessName', 'address', 'city', 'state', 'zip',
+                'contactperson', 'businessphone', 'cell', 'email'
+            ];
+            fields.forEach(fieldId => {
+                let field = document.getElementById(fieldId);
+                if (field && !field.value) {
+                    field.nextElementSibling.textContent = 'Please enter the value';
+                    field.nextElementSibling.style.color = 'red';
+                    field.nextElementSibling.style.marginbottom = '12px';
+                    isValid = false;
+                } else if (fieldId === 'email' && (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(field.value) || !field.value.includes('@gmail.com'))) {
+                field.nextElementSibling.textContent = 'Email should be a valid and contain @gmail.com';
+                field.nextElementSibling.style.color = 'red';
+                field.nextElementSibling.style.marginBottom = '12px';
+                isValid = false;
+            } else if ((fieldId === 'businessphone' || fieldId === 'cell') && !/^\d{10}$/.test(field.value)) {
+                field.nextElementSibling.textContent = 'Please enter a valid number';
+                field.nextElementSibling.style.color = 'red';
+                field.nextElementSibling.style.marginBottom = '12px';
+                isValid = false;
+            }
+                else {
+                    field.nextElementSibling.textContent = '';
+                }
+            });
+            return isValid;
+        }
+    </script>
+    
+</body>
+
+</html>
